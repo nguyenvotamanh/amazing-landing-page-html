@@ -1,0 +1,595 @@
+/*RESET CSS BEGIN*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.block {
+    display: block;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+h4 {
+    font-size: 50px;
+}
+
+/*HELPER CLASS END*/
+
+* {
+/*
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+*/
+    box-sizing: border-box;
+/*    outline: 0;*/
+}
+
+body {
+    font-family: 'Lato';
+    font-size: 19px;
+    color: #333333;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+/* GENERAL RULES */
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* OPENPING SECTION */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#opening {
+    height: 748px;
+    background-image: linear-gradient(rgba(84, 54, 149, 0.6), rgba(84, 54, 149, 0.6)), url('../img/header-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+}
+
+.navbar .nav li{
+    display: inline-block;   
+}
+
+.navbar .nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 50px;
+}
+
+.navbar .nav li a:hover {
+    font-weight: 700;
+}
+
+.opening-info {
+    margin-top: 180px;
+}
+
+h3 {
+    color: white;
+    font-size: 65px; 
+    font-weight: 700;
+}
+
+.p-opening {
+    font-size: 33px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 105px;
+}
+
+.opening-btn {
+    border: 1px solid white;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 17px 37px;
+}
+
+.opening-img {
+    position: absolute;
+    top: 370px;
+    right: 20px;
+}
+
+.ellipse {
+    display: block;
+    margin: 9px;
+    vertical-align: middle;
+}
+
+/* INTRODUCTION SECTION */
+
+#introduction .container {
+    margin-top: 60px;
+}
+
+.row {
+    overflow: hidden;
+}
+
+#introduction .row h1 {
+    font-size: 127px;
+    color: #e1e1e1;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 35%;
+    margin-top: 30px;
+}
+
+.introduce-features {
+    width: 60%;
+    padding-left: 150px;   
+}
+
+.feature {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.feature-text {
+    width: 85%;
+    padding-left: 30px;
+}
+
+.feature-text h6 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.feature-text h6:hover {
+    color: #654b9f;
+}
+
+.feature-text p {
+    font-size: 14px;
+}
+
+/* SERVICE SECTION */
+
+#service {
+    height: 1360px;
+    background-image: url(../img/complete.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin-bottom: -550px;
+}
+
+.service-info {
+    width: 60%;
+    overflow: visible;
+    margin-top: 146px;
+}
+
+.service-info h4 {
+    color: #654b9f;
+    margin-bottom: 45px;
+}
+
+.service-info p {
+    padding-right: 210px;
+    margin-bottom: 70px;
+}
+
+.service-btn {
+    border: 1px solid #503392;
+    background: #503392;
+    color: white;
+    text-decoration: none;
+    padding: 23px 14px;
+}
+
+.service-btn:hover {
+    background: #3e1e86;
+}
+
+/* PORFOLIO SECTION */ 
+
+#porfolio {
+    text-align: center;
+}
+
+#porfolio h4 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#porfolio ul {
+    margin: 60px 0 40px 0;
+}
+
+#porfolio ul li {
+    display: inline-block;
+}
+
+#porfolio ul li a {
+    color: #333333;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 17px; 
+}
+
+#porfolio ul li a:hover {
+    background: #654b9f;
+    color: white;
+}
+
+.photos img {
+    width: 20%
+}
+
+/* STATISTICS SECTION */
+
+#statistics {
+    height: 382px;
+    background-image: linear-gradient(rgba(77,51,133, 0.9), rgba(77,51,133, 0.9)), url(../img/statistic-bg.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.figure {
+    width:25%;
+    float: left;
+    text-align: center;
+    margin-top: 70px;
+    color: white;
+}
+
+.figure img {
+    margin-bottom: 33px;
+}
+
+.figure p {
+    font-size: 20px;
+}
+
+.figure .number {
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    height: 835px;
+    background: #232323;
+    color: white;
+}
+
+#contact h4 {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.contact-discription {
+    margin-bottom: 75px;
+}
+
+.contact-row {
+    float: left;
+    width: 100%;
+    height: 435px;
+}
+
+.contact-form {
+    width: 50%; 
+    text-align: left;
+}
+
+.contact-form h6 {
+    text-transform: capitalize;
+}
+
+form {
+    margin: 45px 0 35px 0;
+}
+
+input {
+    display: block;
+    margin-top: 15px;
+    border: 1px solid white;
+    background: #232323;
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+}
+
+form #message {
+    padding: 15px 0 80px 10px; 
+}
+
+.contact-btn {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background: #503392;
+    padding: 10px 35px;
+}
+
+.address {
+    width: 50%;
+    margin-top: 55px;
+    text-align: left;
+}
+
+.address .address-title {
+    font-size: 33px;
+    margin-bottom: 40px;
+}
+
+.address img {
+    margin-right: 30px;
+}
+
+.address .house-icon {
+    text-align: right;
+}
+
+.address p {
+    font-size: 16px;
+}
+
+.address-block,
+.phone-number {
+    display: block;
+    margin-left: 55px;
+    margin-top: 5px;
+}
+
+/* COPYRIGHT SECTION */
+
+#copyright {
+    background: #1f1f1f;
+}
+
+.social-media img {
+    padding-right: 20px;
+}
+
+
+/* MEDIA QUERIES / RESPONSIVENESS */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        padding: 60px 30px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 60px 30px;
+    }
+}
+
+@media only screen and (max-width: 896px) {
+    .navbar {
+        overflow: hidden;
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        display: block;
+        z-index: 1000;
+    }
+    
+     .burger-nav {
+        //background-image: url('../img/hamburger.png') no-repeat 100% center;
+        //display: block;
+        height: 33px;
+        width: 40px;
+        cursor: pointer;
+        float: right;
+        //margin-bottom: 10px;
+         border: 3px solid nlack;
+    }
+    
+    .container nav ul {
+        height: 0;
+        overflow: hidden;
+        background: #282828;
+        border-radius: 5px;
+    }
+    
+    .container nav ul.open {
+        height: auto;
+        clear: both;
+    }
+    
+    .container nav ul li {
+        float: none;
+        text-align: right;
+        width: auto;
+        margin: 0;
+        display: block;
+    }
+    
+/*
+    .container nav ul li a {
+        color: white;
+        padding: 10px;
+        display: block;
+        margin: 0;
+        border: none;
+    }
+*/
+    
+/*
+    .container nav ul li a:hover {
+        border: none;
+    }
+*/
+}
