@@ -216,18 +216,22 @@ ol li {
     position: relative;
 }
 
-.navbar .nav li{
+.burger-nav {
+    display: none;
+}
+
+nav ul li{
     display: inline-block;   
 }
 
-.navbar .nav li a {
+nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     margin: 50px;
 }
 
-.navbar .nav li a:hover {
+nav ul li a:hover {
     font-weight: 700;
 }
 
@@ -534,9 +538,9 @@ form #message {
     .container {
         padding: 60px 30px;
     }
-}
 
 @media only screen and (max-width: 896px) {
+    
     .navbar {
         overflow: hidden;
         position: absolute;
@@ -547,21 +551,18 @@ form #message {
     }
     
      .burger-nav {
-        //background-image: url('../img/hamburger.png') no-repeat 100% center;
-        //display: block;
+        display: block;
         height: 33px;
         width: 40px;
         cursor: pointer;
         float: right;
-        //margin-bottom: 10px;
-         border: 3px solid nlack;
+        margin-bottom: 20px;
     }
     
-    .container nav ul {
+    .container nav ul{
         height: 0;
         overflow: hidden;
-        background: #282828;
-        border-radius: 5px;
+        background: #4b3274;
     }
     
     .container nav ul.open {
@@ -577,19 +578,93 @@ form #message {
         display: block;
     }
     
-/*
     .container nav ul li a {
         color: white;
+        margin: 0;
         padding: 10px;
         display: block;
-        margin: 0;
-        border: none;
     }
-*/
+}
     
-/*
-    .container nav ul li a:hover {
-        border: none;
+@media only screen and (max-width: 550px) {
+    .opening-btn {
+        margin-bottom: 0px;
     }
-*/
+    
+    .opening-info {
+        margin-top: 70px;
+    }
+    
+    .p-opening {
+        margin-bottom: 75px;
+    }
+    
+    #introduction .row h1 {
+        width: 100%;
+        font-size: 117px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .introduce-features {
+        width: 100%;
+        float: none;
+        padding-left: 5px;
+    }
+    
+    .feature {
+        display: inline-block;
+        float: none;
+    }
+    
+    .feature-text {
+        width: 75%;
+    }
+    
+    .service-info {
+        width: 100%;
+    }
+    
+    .service-info p {
+        padding-right: 0;
+        margin-bottom: 70px;
+    }
+    
+    .service-btn {
+        border: 1px solid #503392;
+        background: #503392;
+        color: white;
+        text-decoration: none;
+        padding: 13px 14px;
+        width: 100%;
+    }
+    
+    #statistics {
+        height: 650px;
+    }
+    
+    .figure {
+        width: 50%;
+    }
+    
+    #contact {
+        height: 1000px
+    }
+    
+    .contact-form {
+        width: 100%;
+    }
+    
+    .address {
+        width: 100%;
+    }
+    
+    #copyright {
+        height: 200px;
+    }
+    
+    .social-media {
+        float: none;
+        text-align: center;
+    }
 }
